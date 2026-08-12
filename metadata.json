@@ -1,0 +1,6 @@
+{
+  "name": "Jaipur Gym",
+  "description": "Pratap Nagar's most trusted gym led by Dr. Manish. Medical-grade fitness, injury recovery, strength, and community.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
