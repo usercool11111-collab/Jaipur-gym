@@ -1,6 +1,5 @@
 import React from 'react';
 import { Dumbbell, Sparkles, ShieldCheck, Heart, ArrowRight } from 'lucide-react';
-import { GYM_CONTACT } from '../data/gymData';
 
 interface FacilityProps {
   onOpenConsultation: () => void;
@@ -28,9 +27,14 @@ export const FacilitySection: React.FC<FacilityProps> = ({ onOpenConsultation })
         {/* Facility Image Showcase */}
         <div className="relative rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl group">
           <img
-            src="/src/assets/images/gym_facility_1786540731187.jpg"
-            alt="Jaipur Gym Facility Equipment"
-            className="w-full h-[380px] sm:h-[480px] object-cover object-center filter contrast-110 group-hover:scale-102 transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/d/1tkWW1jqfGNrUxC4CaC1FD6p_Te-6nSJv"
+            onError={(e) => {
+              if (e.currentTarget.src !== '/facility_drive_image.jpg') {
+                e.currentTarget.src = '/facility_drive_image.jpg';
+              }
+            }}
+            alt="Jaipur Gym Haldighati Road Facility & Equipment"
+            className="w-full h-[380px] sm:h-[480px] object-cover object-center filter contrast-110 brightness-100 group-hover:scale-102 transition-transform duration-500"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent" />
@@ -46,13 +50,13 @@ export const FacilitySection: React.FC<FacilityProps> = ({ onOpenConsultation })
               </p>
             </div>
 
-            <a
-              href="#pricing"
+            <button
+              onClick={onOpenConsultation}
               className="bg-red-600 hover:bg-red-500 text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 shrink-0"
             >
-              <span>See Membership Options</span>
+              <span>Claim Free Walk-In Pass</span>
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </button>
           </div>
         </div>
 

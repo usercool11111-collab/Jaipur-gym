@@ -133,20 +133,6 @@ export const PROGRAMS: Program[] = [
     ],
     idealFor: "Lifters with old joint stiffness, desk workers, or anyone wanting safe, pain-free workouts.",
     image: "/src/assets/images/dr_manish_portrait_1786540719308.jpg"
-  },
-  {
-    id: "nutrition-supplements",
-    title: "Nutrition & Supplement Advice",
-    tagline: "Clear, honest advice on real Indian food, protein targets, and safe supplements.",
-    iconName: "Apple",
-    medicalAdvantage: "Honest, science-backed guidance free from commercial sales hype.",
-    keyFeatures: [
-      "Macro breakdowns tailored to Indian home meals",
-      "Straightforward guidance on Creatine, Whey, and Multivitamins",
-      "Zero pushy sales pitch — we focus on real home food first"
-    ],
-    idealFor: "Anyone confused by internet diet fads or supplement pushers.",
-    image: "/src/assets/images/dr_manish_portrait_1786540719308.jpg"
   }
 ];
 
